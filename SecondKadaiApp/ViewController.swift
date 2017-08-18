@@ -23,14 +23,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let a:SecondViewController = segue.destination as! SecondViewController
+        let secondViewController = segue.destination as! SecondViewController
         
-        let b:String! = name.text
-        
-        a.x = b
+        secondViewController.name = name.text!
         
     }
-    @IBAction func unwind(_segue: UIStoryboardSegue){
+    @IBAction func unwind(_ segue: UIStoryboardSegue){
     }
 
 }

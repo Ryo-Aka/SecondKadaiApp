@@ -12,15 +12,14 @@ class SecondViewController: UIViewController {
     
     @IBOutlet weak var label: UILabel!
 
-    var x:Any = "入力なし"
+    var name = "入力なし"
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        let result = x
-        label.text = "こんにちは、 \(result) さん"
+        label.text = "こんにちは、 \(name) さん"
     }
 
     override func didReceiveMemoryWarning() {
